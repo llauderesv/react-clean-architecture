@@ -1,2 +1,2 @@
 # React clean architecture
-A simple and clean architecture using ReactJs
+A simple clean architecture using ReactJs
