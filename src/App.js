@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useCallback} from 'react';
+import ThemeContext, {themes} from './ThemeContext';
+import Button from './components/Button';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [theme, setToggleTheme] = useState(themes.light);
+
+  const toggleTheme = useCallback(() => {
+    setToggleTheme(theme === themes.light ? themes.dark : themes.light);
+  }, [theme]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeContext.Provider value={{theme, toggleTheme}}>
+      <div style={{backgroundColor: theme.background, color: theme.foreground}}>
+        <Button onClick={toggleTheme}>Toggle Theme</Button>
+      </div>
+    </ThemeContext.Provider>
   );
-}
+};
 
 export default App;
