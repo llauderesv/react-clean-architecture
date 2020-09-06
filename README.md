@@ -42,4 +42,4 @@ Customizable theme in your application. If you have a feature that has a dark-mo
 
 `utils`
 
-Contains a common helper functions to be accessible in all javascript files.
+Contains all your common helper functions in your application.
