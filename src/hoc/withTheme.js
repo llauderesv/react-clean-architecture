@@ -16,7 +16,7 @@ const withTheme = BaseComponent => props => {
 };
 
 withTheme.propTypes = {
-  BaseComponent: PropTypes.element,
+  BaseComponent: PropTypes.element.isRequired,
 };
 
 export default withTheme;
