@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '.';
 
 const Courses = () => {
   return (
-    <div>
+    <Layout>
       <h1>Course Page.</h1>
-    </div>
+    </Layout>
   );
 };
 

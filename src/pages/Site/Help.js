@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '.';
 
 const Help = () => {
   return (
-    <div>
+    <Layout>
       <h1>Help Page.</h1>
-    </div>
+    </Layout>
   );
 };
 

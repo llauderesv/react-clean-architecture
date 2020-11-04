@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '.';
 
 const LMS = () => {
   return (
-    <div>
+    <Layout>
       <h1>LMS Page.</h1>
-    </div>
+    </Layout>
   );
 };
 

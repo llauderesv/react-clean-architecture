@@ -1,8 +1,9 @@
 import React from 'react';
+import Layout from '.';
 
 const SignOrSignUp = () => {
   return (
-    <div>
+    <Layout>
       <h1>Sign-In / Sign-Up</h1>
 
       <button
@@ -14,7 +15,7 @@ const SignOrSignUp = () => {
         Sign-In
       </button>
       <button name='sign-up'>Sign-Up</button>
-    </div>
+    </Layout>
   );
 };
 

@@ -3,7 +3,8 @@
   "bracketSpacing": false,
   "arrowParens": "avoid",
   "jsxSingleQuote": true,
-  "printWidth": 80,
+  "printWidth": 100,
   "tabWidth": 2,
-  "semi": true
+  "semi": true,
+  "trailingComma": "all"
 }

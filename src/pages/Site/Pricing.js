@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '.';
 
 const Pricing = () => {
   return (
-    <div>
+    <Layout>
       <h1>Pricing Page.</h1>
-    </div>
+    </Layout>
   );
 };
 

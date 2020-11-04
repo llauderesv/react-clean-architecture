@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className='sidebar'>
       <ul className='learner-side-bar'>
         <li>
-          <Link to='/learner/home'>Home</Link>
+          <Link to='/learner'>Home</Link>
         </li>
         <li>
           <Link to='/learner/my-courses'>My Courses</Link>
