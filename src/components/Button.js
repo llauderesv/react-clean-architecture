@@ -1,10 +1,6 @@
 import React from 'react';
 import withTheme from '../hoc/withTheme';
 
-/**
- * React Base Button Component...
- *
- */
 const Button = ({ classNames, children, ...restProps }) => {
   const className = ['btn', classNames].join(' ');
 

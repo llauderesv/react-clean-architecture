@@ -1,21 +1,22 @@
-import React, {useState, useCallback} from 'react';
-import ThemeContext, {themes} from './ThemeContext';
-import Button from './components/Button';
 import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Switch} from 'react-router-dom';
+import {Route} from 'react-router';
+import Site from './pages/Site';
+import Learner from './pages/Learner';
 
 const App = () => {
-  const [theme, setToggleTheme] = useState(themes.light);
-
-  const toggleTheme = useCallback(() => {
-    setToggleTheme(theme === themes.light ? themes.dark : themes.light);
-  }, [theme]);
-
   return (
-    <ThemeContext.Provider value={{theme, toggleTheme}}>
-      <div style={{backgroundColor: theme.background, color: theme.foreground}}>
-        <Button onClick={toggleTheme}>Toggle Theme</Button>
-      </div>
-    </ThemeContext.Provider>
+    <Router>
+      <Switch>
+        <Route path='/' component={Site} />
+        <Route path='/learner' component={Learner} />
+        <Route render={() => <h1>Page Not found</h1>} />
+        {/* 
+        <Route exact path='/instructor' component={} />
+        <Route exact path='/learner' component={} /> */}
+      </Switch>
+    </Router>
   );
 };
 

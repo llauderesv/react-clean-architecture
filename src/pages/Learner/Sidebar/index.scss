@@ -1,0 +1,21 @@
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+  background-color: #4d4d4d;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
